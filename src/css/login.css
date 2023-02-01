@@ -1,0 +1,42 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.login-image {
+    width: 40vw;
+    margin-bottom: 2rem;
+}
+
+.login-title {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.auth-btn {
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #7AE0FF;
+}
+
+.reg-btn {
+    background-color: #E380FF;
+}
