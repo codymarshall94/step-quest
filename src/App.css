@@ -1,12 +1,48 @@
 .App {
-    background-color: #361389;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #361389;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-hero {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.game-font {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Press Start 2P", cursive;
+}
+
+span, .game-font-sub {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "Press Start 2P", cursive;
+}
+
+.inventory-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.9);
+  min-width: 60vw;
+  padding: 1.5rem 1rem;
+  margin: 0.5rem 0;
+}
+
+.title-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 2rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.9);
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+    width: 90vw;
+    margin: 1rem auto;
 }

@@ -1,0 +1,19 @@
+.allocate-skill-container {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.allocate-skill-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.allocate-skill-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
