@@ -12,12 +12,13 @@
 }
 
 .game-font {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", cursive;
 }
 
-span, .game-font-sub {
+span,
+.game-font-sub {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: "Press Start 2P", cursive;
@@ -37,12 +38,61 @@ span, .game-font-sub {
 }
 
 .title-container {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 2rem;
-    border: 0.1rem solid rgba(255, 255, 255, 0.9);
-    padding: 1.5rem 1rem;
-    margin: 0.5rem 0;
-    line-height: 1.5rem;
-    width: 90vw;
-    margin: 1rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.9);
+  padding: 1.5rem 1rem;
+  margin: 0.5rem 0;
+  line-height: 1.5rem;
+  width: 90vw;
+  margin: 1rem auto;
+}
+
+.back-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #fff;
+  color: #361389;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.enemy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.9);
+  min-width: 60vw;
+  padding: 1.5rem 1rem;
+  margin: 0.5rem 0;
+  color: #000;
+  text-align: center;
+}
+
+.enemy-health {
+  margin-top: 1rem;
+}
+
+.enemy-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.enemy-image {
+  width: 10%;
 }

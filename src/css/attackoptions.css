@@ -1,0 +1,25 @@
+.attack-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.attack-option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attack-option-cost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+}
+
+.attack-option-cost-energy,
+.attack-option-cost-damage {
+    margin: 0.25rem 0;
+}
