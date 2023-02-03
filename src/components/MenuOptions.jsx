@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/menuoptions.css";
 
 const menuOptions = [
@@ -33,10 +34,16 @@ function MenuOptions() {
   return (
     <div className="menu-container">
       {menuOptions.map((option, index) => (
-        <div key={index} className="menu-option">
-          <img className="menu-option-icon" src={option.icon} alt={option.name} />
-          <span>{option.name}</span>
-        </div>
+        <Link className="menu-link" key={index} to={option.link}>
+          <div className="menu-option">
+            <img
+              className="menu-option-icon"
+              src={option.icon}
+              alt={option.name}
+            />
+            <span>{option.name}</span>
+          </div>
+        </Link>
       ))}
     </div>
   );
