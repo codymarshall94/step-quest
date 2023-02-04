@@ -1,28 +1,20 @@
 import React from "react";
 import "../css/attackoptions.css";
-import { attackEnemy } from "../utils/damageCalc";
-import { ENEMIES } from "../enemies";
 
 const attackOptions = [
   {
     name: "Attack",
     energy: 100,
-    damage: 10,
+    multiplier: 1,
   },
   {
     name: "Heavy Attack",
     energy: 200,
-    damage: 30,
+    multiplier: 1.5,
   },
 ];
 
-const enemy = ENEMIES[0];
-
-function AttackOptions() {
-
-  const handleAttack = (option) => {
-    console.log(attackEnemy({enemy}));
-  };
+function AttackOptions({ onAttack }) {
 
   return (
     <div className="menu-options attack-options">
@@ -30,18 +22,12 @@ function AttackOptions() {
         <div
           className="menu-option attack-option"
           key={index}
-          onClick={() => handleAttack()}
+          onClick={() => onAttack(option)}
         >
           <div>
             <span>{option.name}</span>
           </div>
           <div className="attack-option-cost">
-            <span
-              style={{ color: "green" }}
-              className="attack-option-cost-damage"
-            >
-              {option.damage}
-            </span>
             <span
               style={{ color: "blue" }}
               className="attack-option-cost-energy"

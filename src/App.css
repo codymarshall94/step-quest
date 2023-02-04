@@ -24,6 +24,10 @@ span,
   font-family: "Press Start 2P", cursive;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .inventory-container {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +70,14 @@ span,
   color: #fff;
 }
 
+.small-padding {
+  padding: 0.5rem;
+}
+
+.skill-page-range-slider,
+.skill-page-experience,
+.skill-page-info,
+.adventure-log-container,
 .enemy-container {
   display: flex;
   flex-direction: column;
@@ -81,6 +93,19 @@ span,
   text-align: center;
 }
 
+.skill-page-range-slider-container {
+  width: 100%;
+}
+
+.skill-page-range-slider-input {
+  width: 100%;
+}
+
+.small-margin-top {
+  margin-top: 3rem;
+}
+
+
 .enemy-health {
   margin-top: 1rem;
 }
@@ -95,4 +120,13 @@ span,
 
 .enemy-image {
   width: 10%;
+}
+
+.game-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  background-color: #6DD387;
+  border: 0.25rem solid #fff;
+  border-radius: .45rem;
 }

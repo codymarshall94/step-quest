@@ -2,7 +2,9 @@ import React from "react";
 import "../css/adventuredisplay.css";
 import BackButton from "./BackButton";
 
-function AdventureDisplay() {
+function AdventureDisplay({ user }) {
+  const currentHealth = user.health > 0 ? user.health : 0;
+
   return (
     <div className="display-container">
       <BackButton />
@@ -11,11 +13,11 @@ function AdventureDisplay() {
           src={require("../assets/images/icons/GreenPotion.png")}
           alt="Energy"
         />
-        <span style={{ color: "blue" }}>300</span>
+        <span style={{ color: "blue" }}>{user.energy}</span>
       </div>
       <div className="health-container">
         <img src={require("../assets/images/icons/Heart.png")} alt="Health" />
-        <span style={{ color: "red" }}>40</span>
+        <span style={{ color: "red" }}>{currentHealth}</span>
       </div>
     </div>
   );

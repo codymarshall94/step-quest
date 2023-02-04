@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import { ENEMIES } from "../enemies";
+import React from "react";
 
-function Enemy() {
-  const [enemy, setEnemy] = useState(ENEMIES[0]);
+function Enemy({enemy}) {
 
   return (
     <div className="enemy-container">

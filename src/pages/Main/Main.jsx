@@ -3,10 +3,11 @@ import MenuOptions from '../../components/MenuOptions';
 import StepCount from '../../components/StepCount';
 import './main.css';
 
-function Main() {
+function Main({ user }) {
+  const { stepPoints } = user;
   return (
     <div className='main-container'>
-        <StepCount />
+        <StepCount points={stepPoints}/>
         <MenuOptions />
     </div>
   )

@@ -12,6 +12,7 @@ const TurnSequence = ({
   setEnemyLog,
 }) => {
   const [playerTurn, setPlayerTurn] = useState(true);
+  const { health } = user;
 
   useEffect(() => {
     if (!playerTurn) {
@@ -40,10 +41,10 @@ const TurnSequence = ({
 
   const enemyAttack = () => {
     const damage = performAttack(enemy, user);
-    if (user.health - damage <= 0) {
+    if (health - damage <= 0) {
       setUser({ ...user, health: 0 });
     } else {
-      setUser({ ...user, health: user.health - damage });
+      setUser({...user, health: health - damage});
     }
     setEnemyLog(`The ${enemy.name} attacks you for ${damage} damage.`);
     setPlayerTurn(true);

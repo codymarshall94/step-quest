@@ -1,30 +1,42 @@
 export const ENEMIES = [
     {
         name: 'Acid Ooze',
+        skills: [
+            {name: 'Attack', level: 7},
+            {name: 'Defense', level: 3},
+            {name: 'Strength', level: 2},
+        ],
         health: 10,
-        attack: 2,
-        defense: 1,
         image: require('./assets/images/enemies/AcidOozeIdleSide.gif'),
     },
     {
         name: 'Brawny Ogre',
         health: 15,
-        attack: 3,
-        defense: 2,
+        skills: [
+            {name: 'Attack', level: 8},
+            {name: 'Defense', level: 4},
+            {name: 'Strength', level: 3},
+        ],
         image: require('./assets/images/enemies/BrawnyOgreIdleSide.gif'),
     },
     {
         name: 'Storm Giant',
         health: 20,
-        attack: 4,
-        defense: 3,
+        skills: [
+            {name: 'Attack', level: 9},
+            {name: 'Defense', level: 5},
+            {name: 'Strength', level: 4},
+        ],
         image: require('./assets/images/enemies/StormGiantIdleSide.gif'),
     },
     {
         name: 'Werewolf Stalker',
         health: 25,
-        attack: 5,
-        defense: 4,
+        skills: [
+            {name: 'Attack', level: 10},
+            {name: 'Defense', level: 6},
+            {name: 'Strength', level: 5},
+        ],
         image: require('./assets/images/enemies/WerewolfStalkerIdleSide.gif'),
     },
 ];
